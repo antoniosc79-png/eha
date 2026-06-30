@@ -18,7 +18,7 @@ function eventCards(limit = events.length) {
   </article>`).join('');
 }
 const views = {
-  home: () => `<section class="hero"><p class="eyebrow">Alliance Men · East Hill</p><h1>Stronger.<br>Together.</h1><p class="hero-copy">A brotherhood pursuing Jesus, building each other up, and serving our community.</p><div class="actions"><button class="btn" data-tab="events">Find an event</button><button class="btn secondary" data-tab="members">Connect</button></div></section>
+  home: () => `<section class="hero"><div class="hero-logo"><img src="assets/ministry-logo.png" alt="Alliance Men"></div><p class="eyebrow">Alliance Men · East Hill</p><h1>Stronger.<br>Together.</h1><p class="hero-copy">A brotherhood pursuing Jesus, building each other up, and serving our community.</p><div class="actions"><button class="btn" data-tab="events">Find an event</button><button class="btn secondary" data-tab="members">Connect</button></div></section>
     <section class="section"><div class="section-title"><h2>Coming Up</h2><button class="text-link" data-tab="events">View all</button></div>${eventCards(2)}</section>
     <section class="section"><div class="card verse"><blockquote>“As iron sharpens iron, so one person sharpens another.”</blockquote><cite>Proverbs 27:17</cite></div></section>`,
   events: () => `<header class="page-head"><p class="eyebrow">Get involved</p><h2>Events</h2><p>Show up. Be known. Build something that lasts.</p></header><section class="page"><div class="list">${eventCards()}</div></section>`,
